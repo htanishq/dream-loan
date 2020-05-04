@@ -1,4 +1,272 @@
-*{
+/* global declared styles */
+*,
+*::before,
+*::after{
  padding: 0;
- border: 0;
+ margin: 0;
+ box-sizing: inherit;
+}
+html{
+    font-family:  "montsemibold", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+body{
+    color: #1b2331;
+}
+/* media queries */
+@media(max-width:415px){
+    html{
+        font-size: 1.2rem;
+    }
+    .wrapper{
+        margin: 0 auto;
+        padding: 0px 20px;
+    }
+    .navbar{
+        display: none;
+    }
+    .login-button{
+        display: none;
+    }
+    /* .nav-title i:last-child{
+        display: none;
+    } */
+    .part-1-detail{
+        display: none;
+    }
+    .section-3 div > img{
+        display: none;
+    }
+}
+@media(min-width:600px){
+    .navbar{
+        display: block;
+    }
+    .login-button{
+        display: block;
+    }
+    .nav-title > i{
+        display: none;
+    }
+}
+/* style for mobile first */
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    color: inherit;
+}
+.nav-title{
+    border-bottom:1px solid #d1d4d8;
+}
+.nav-title > a{
+    margin: 20px 0;
+    display: inline-block;
+    text-align: left;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.nav-title i{
+    float: right;
+    margin: 16px 0;
+    cursor: pointer;
+}
+/* .nav-title i:last-child{
+    display: none;
+} */
+.navbar{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.navbar > li{
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+.login-button{
+    text-align: center;
+    border-top: 1px solid #d1d4d8;
+}
+.login-button a{
+    margin-top: 20px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.btn-1{
+    background-color: rgb(61, 90, 254);
+    padding: 10px 60px;
+    border-radius: 3px;
+    color: white !important;
+    border: none;
+}
+.btn-2{
+    background-color: white;
+    padding: 10px 60px;
+    border-radius: 3px;
+    border: 1px solid #d1d4d8;
+    color: rgb(61, 90, 254) !important;
+}
+/* section 1 */
+.section-1{
+    text-align: center;
+}
+
+.section-1 .part-1 h1{
+    text-transform: capitalize;
+    padding: 20px 0;
+}
+.section-1 .part-1 p{
+    line-height: 30px;
+}
+.section-1 .part-1 button{
+    margin-top: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 10px 30px;
+}
+.section-1 .part-1 .btn-2{
+    margin-left: 10px;
+}
+.section-1 .part-2{
+    margin-top: 20px;
+}
+.section-1 .part-2 video{
+    width: 100%;
+}
+/* section 2 */
+
+.section-2{
+    text-align: center;
+    padding: 60px 0;
+}
+.section-2 div:first-child{
+    padding: 40px 0;
+
+}
+.section-2 div:first-child span{
+    text-transform: capitalize;
+    line-height: 30px;
+    font-weight: bolder;
+    display: inline-block;
+    width: 90%;
+}
+.section-2 div:first-child ul{
+    overflow: hidden;
+}
+.section-2 div:first-child ul li{
+    float: left;
+    width: 30%;
+    margin: 20px 0;
+    font-weight: 500;
+    font-size: 16px;
+}
+.list-boxes li{
+    padding: 30px 0;
+}
+.list-boxes h3{
+ margin: 20px 0;
+ text-transform: capitalize;
+ font-weight: bolder;
+ font-size: 24px;
+}
+.list-boxes p{
+    color: gray;
+    line-height: 30px;
+}
+/* section 3 */
+
+.section-3{
+    text-align: center;
+}
+.section-3 img{
+    height: auto;
+    width: 100%;
+}
+.section-3 video{
+    width: 100%;
+}
+.section-3 h2{
+    padding: 30px 0 0;
+}
+.section-3 h2~p{
+    padding: 30px 20px;
+    line-height: 25px;
+}
+.section-3 li{
+    padding: 30px 0;
+    
+}
+.content-media h5{
+    margin: 20px 0;
+    text-align: left;
+    text-transform: uppercase;
+    color: gray;
+    font-stretch: expanded;
+}
+.content-media h3{
+    margin: 20px 0;
+    text-align: left;
+    font-stretch: expanded;
+    
+}
+.content-media p{
+    margin: 20px 0;
+    text-align: left;
+    line-height: 25px;
+}
+/* section 4 */
+.section-4{
+    background-color: #1b2331;
+    text-align: center;
+    padding: 60px 0;
+}
+.main-head{
+    padding: 30px 20px;
+    color: white;
+}
+.main-head span{
+    display: inline-block;
+    margin-bottom: 30px;
+    font-size: 32px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.main-head p{
+    margin-bottom: 30px;
+    font-weight: bold;
+    line-height: 25px;
+}
+.main-head button{
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px 20px;
+}
+.tool-boxes{
+    overflow: hidden;
+    text-align: center;
+}
+.tool-boxes div{
+    float: left;
+    height: 55px;
+    background-color: white;
+    width: 20%;
+    margin: 10px;
+    border-radius: 2px;
+}
+.tool-boxes img{
+    width: 28px;
+    height: 28px;
+    display: block;
+    margin: 0 auto;
+}
+.tool-boxes span{
+    color: black;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    
 }

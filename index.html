@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Dream Loan</title>
 </head>
 <body>
     <div class="wrapper">
         <!-- header start from here -->
         <div class="header">
-            <span class="nav-title">dream loan</span>
-            <ul>
+            <div class="nav-title">
+                <a href="">dream loan</a>
+                <i class="material-icons btn-menu">menu</i>
+                <!-- <i class="material-icons btn-close">close</i> -->
+            </div>            
+            
+            <ul class="navbar">
                 <li><a href="">product</a></li>
                 <li><a href="">developer</a></li>
                 <li><a href="">company</a></li>
@@ -18,9 +25,9 @@
                 <li><a href="">pricing</a></li>
             </ul>
 
-            <ul>
-                <li><a class="" href="">login</a></li>
-                <li><a class="btn" href=""></a>get loan</li>
+            <ul class="login-button">
+                <li><a class="btn-1" href="">login</a></li>
+                <li><a class="btn-2" href="">get loan</a></li>
             </ul>
         </div>
         <!-- intro -->
@@ -32,16 +39,17 @@
                     repudiandae repellendus doloremque magni saepe, corrupti ipsam
                      tempora ea explicabo quia. Reiciendis.
                 </p>
-                <button>get loan now!</button>
-                <button>get demo</button>
-                <ul>
+                <button class="btn-1">get loan now!</button>
+                <button class="btn-2">get demo</button>
+                <ul class="part-1-detail">
                     <li>basic loan</li>
                     <li>easy emi</li>
                     <li>no registration required</li>
                 </ul>
             </div>
             <div class="part-2">
-                <img class="gif" src="" alt="">
+                <!-- <img src="https://www.testim.io/wp-content/uploads/2020/02/05-tests_that_deliver-0-00-03-14-1400x1199.jpg" alt=""> -->
+                <video playsinline="" autoplay="" preload="metadata" muted="" loop="" poster="https://www.testim.io/wp-content/uploads/2020/02/05-tests_that_deliver-0-00-03-14-1400x1199.jpg"> <source type="video/mp4" src="https://www.testim.io/wp-content/uploads/2019/11/hero-s-vid01.mp4"></video>
             </div>
         </div>
         <!-- section 2 -->
@@ -58,19 +66,19 @@
                 </ul>
             </div>
             <div>
-                <ul>
+                <ul class="list-boxes">
                     <li>
-                        <i></i>
+                        <img src="https://www.testim.io/wp-content/uploads/2019/11/expand-test-ico.svg" alt="">
                         <h3>expand test coverage</h3>
                         <p>fast authoring increses coverage and quality across your platform.</p>
                     </li>
                     <li>
-                        <i></i>
+                        <img src="https://www.testim.io/wp-content/uploads/2019/11/maintenance-ico.svg" alt="">
                         <h3>reduce maintainance</h3>
                         <p>ai-based stablizers eliminate flaky test that consumes resources.</p>
                     </li>
                     <li>
-                        <i></i>
+                        <img src="https://www.testim.io/wp-content/uploads/2019/11/agility-ico.svg" alt="">
                         <h3>increase test agility</h3>
                         <p>code, record and manage tests your way with your tools for greater flexibilty.</p>
                     </li>
@@ -80,7 +88,7 @@
         <!-- section 3 -->
         <div class="section-3">
             <div>
-                <h1>Create, edit, run, and maintain end-to-end tests your way.</h1>
+                <h2>Create, edit, run, and maintain end-to-end tests your way.</h2>
                 <p>Testing is finally made faster, scalable, more resilient and
                     aligned with the way you work.</p>
             </div>
@@ -88,26 +96,30 @@
                 <img src="" alt="">
             </div>
             <div>
-                <ul>
+                <ul class="content-media">
                     <li>
+                        <video class="" playsinline="" autoplay="" preload="metadata" muted="" poster="https://www.testim.io/wp-content/uploads/2019/11/vid-poster01-630x395.png"> <source type="video/mp4" src="https://www.testim.io/wp-content/uploads/2019/11/04_Write_tests_your_way_v03.mp4"></video>
                         <i></i>
                         <h5>Author</h5>
                         <h3>Write tests your way</h3>
                         <p>Author amazingly stable customized tests—either codeless or coded. Finally, functional testing is accessible to everyone on your team.</p>
                     </li>
                     <li>
+                        <video class="" playsinline="" autoplay="" preload="metadata" muted="" poster="https://www.testim.io/wp-content/uploads/2019/11/vid-poster02-630x395.png"> <source type="video/mp4" src="https://www.testim.io/wp-content/uploads/2019/11/02_developer_mode_v08.mp4"></video>
                         <i></i>
                         <h5>Maintain</h5>
                         <h3>Tests you can trust</h3>
                         <p>Testim uses artificial intelligence, Smart Locators, and more to make your tests resilient. Let your tests work for you.</p>
                     </li>
                     <li>
+                        <img src="https://www.testim.io/wp-content/uploads/2019/11/img04@2x-600x475.png" data-lazy-srcset="https://www.testim.io/wp-content/uploads/2019/11/img04@2x.png 2x" alt="" data-lazy-src="https://www.testim.io/wp-content/uploads/2019/11/img04@2x-600x475.png" class="" srcset="https://www.testim.io/wp-content/uploads/2019/11/img04@2x.png 2x" data-was-processed="true" width="664" height="539">
                         <i></i>
                         <h5>Execute</h5>
                         <h3>Fast, scalable test runs</h3>
                         <p>Run parallel tests across browser types on our test cloud, or on any Selenium-compatible test cloud. Troubleshoot failed tests fast with advanced root cause analysis tools.</p>
                     </li>
                     <li>
+                        <video class="" playsinline="" autoplay="" preload="metadata" muted="" poster="https://www.testim.io/wp-content/uploads/2019/11/vid-poster03-630x395.png"> <source type="video/mp4" src="https://www.testim.io/wp-content/uploads/2019/11/03_capture.mp4"></video>
                         <i></i>
                         <h5>Find & Report Bugs</h5>
                         <h3>Troubleshoot, capture and submit</h3>
@@ -116,32 +128,34 @@
                 </ul>
             </div>
         </div>
+    </div>
         <!-- section 4 -->
         <div class="section-4">
-            <div>
-                <h3></h3>
-                <p></p>
-                <button></button>
+            <div class="main-head">
+                <span>Fit your process</span>
+                <p>Testim integrates with the tools you already use so you can stay in your flow.</p>
+                <button class="btn-1">learn about loan services</button>
             </div>
-            <div>
-                <div><i></i><span>jenkins</span></div>
-                <div><i></i><span>circleci</span></div>
-                <div><i></i><span>jira</span></div>
-                <div><i></i><span>slack</span></div>
-                <div><i></i><span>github</span></div>
-                <div><i></i><span>email</span></div>
-                <div><i></i><span>visual studio</span></div>
-                <div><i></i><span>trelio</span></div>
-                <div><i></i><span>codeship</span></div>
-                <div><i></i><span>applitools</span></div>
-                <div><i></i><span>browserstack</span></div>
-                <div><i></i><span>teatrail</span></div>
-                <div><i></i><span>strongloop</span></div>
-                <div><i></i><span>saucelabs</span></div>
-                <div><i></i><span>travis ci</span></div>
-                <div><i></i><span>teamcity</span></div>
+            <div class="tool-boxes">
+                <div><i><img src="https://www.testim.io/wp-content/uploads/2019/11/jenkins-ico@2x.png" alt=""></i><span>jenkins</span></div>
+                <div><i><img src="https://www.testim.io/wp-content/uploads/2019/11/circleci-ico@2x.png" alt=""></i><span>circleci</span></div>
+                <div><i><img src="https://www.testim.io/wp-content/uploads/2019/11/jira-ico@2x.png" alt=""></i><span>jira</span></div>
+                <div><i><img src="https://www.testim.io/wp-content/uploads/2019/11/slack-ico@2x.png" alt=""></i><span>slack</span></div>
+                <div><i><img src="https://www.testim.io/wp-content/uploads/2019/11/github-ico@2x.png" alt=""></i><span>github</span></div>
+                <div><i><img src="https://www.testim.io/wp-content/uploads/2019/11/email-ico@2x.png" alt=""></i><span>email</span></div>
+                <div><i><img src="https://www.testim.io/wp-content/uploads/2019/11/vs-ico@2x.png" alt=""></i><span>vscode</span></div>
+                <div><i><img src="https://www.testim.io/wp-content/uploads/2019/11/trello-ico@2x.png" alt=""></i><span>trelio</span></div>
+                <div><i><img src="https://www.testim.io/wp-content/uploads/2019/11/codeship-ico@2x.png" alt=""></i><span>codeship</span></div>
+                <div><i><img src="https://www.testim.io/wp-content/uploads/2019/11/applitools-ico@2x.png" alt=""></i><span>applitools</span></div>
+                <div><i><img src="https://www.testim.io/wp-content/uploads/2019/11/browserstack-ico@2x.png" alt=""></i><span>browserstack</span></div>
+                <div><i><img src="https://www.testim.io/wp-content/uploads/2019/11/testrail-ico@2x.png" alt=""></i><span>teatrail</span></div>
+                <div><i><img src="https://www.testim.io/wp-content/uploads/2019/11/strong-loop-ico@2x.png" alt=""></i><span>strongloop</span></div>
+                <div><i><img src="https://www.testim.io/wp-content/uploads/2019/11/saucelabs-ico@2x.png" alt=""></i><span>saucelabs</span></div>
+                <div><i><img src="https://www.testim.io/wp-content/uploads/2019/11/travis-ico@2x.png" alt=""></i><span>travisci</span></div>
+                <div><i><img src="https://www.testim.io/wp-content/uploads/2019/11/teamcity-ico@2x.png" alt=""></i><span>teamcity</span></div>
             </div>
         </div>
+    <div class="wrapper">
         <!-- section 5 -->
         <div>
             <h2>Only testim</h2>
@@ -232,7 +246,7 @@
                 </ul>
             </div>
             <div>
-                <h1>starting with testim</h1>
+                <span>starting with testim</span>
                 <button>start testim free</button>
                 <button>schedule a demo</button>
             </div>
@@ -240,7 +254,7 @@
         <!-- footer -->
         <div>
             <ul>
-                <li>testim</li>
+                <li>dream loan</li>
                 <li>
                     <ul>
                         <li>products</li>
@@ -278,7 +292,7 @@
             <ul>
                 <li>terms of service</li>
                 <li>privacy</li>
-                <li>testim 2020</li>
+                <li>dream loan 2020</li>
             </ul>
             <div>
                 <i></i>
@@ -288,5 +302,6 @@
             </div>
         </div>
     </div>
+    <script src="./src/js/index.js"></script>
 </body>
 </html>
