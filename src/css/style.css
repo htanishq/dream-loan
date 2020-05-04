@@ -197,7 +197,7 @@ a:link{
 }
 .section-3 li{
     padding: 30px 0;
-    
+
 }
 .content-media h5{
     margin: 20px 0;
@@ -210,7 +210,7 @@ a:link{
     margin: 20px 0;
     text-align: left;
     font-stretch: expanded;
-    
+
 }
 .content-media p{
     margin: 20px 0;
@@ -254,7 +254,7 @@ a:link{
     height: 55px;
     background-color: white;
     width: 20%;
-    margin: 10px;
+    margin: 8px;
     border-radius: 2px;
 }
 .tool-boxes img{
@@ -268,5 +268,5 @@ a:link{
     font-size: 10px;
     font-weight: bold;
     text-align: center;
-    
+
 }
