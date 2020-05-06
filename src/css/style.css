@@ -38,6 +38,7 @@ body{
     .section-3 div > img{
         display: none;
     }
+    
 }
 @media(min-width:600px){
     .navbar{
@@ -269,4 +270,65 @@ a:link{
     font-weight: bold;
     text-align: center;
 
+}
+/* section 5 */
+.section-5{
+    padding: 60px 0;
+    text-align: left;
+}
+.section-5 ul li{
+    background:  linear-gradient(220deg,#7093ff 0%,#3d5afe 100%);
+    margin: 25px 0;
+    padding: 50px 20px;
+    color: white;
+    border-radius: 2px;
+}
+.section-5 h2{
+    text-align: center;
+    font-stretch: extra-expanded;
+}
+.section-5 span{
+    display: flex;
+    align-items: center;
+}
+.section-5 h3{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.section-5 li img{
+    background-color: white;
+    padding: 20px;
+    border-radius: 2px;
+    margin-right: 20px;
+}
+.section-5 p{
+    margin-top: 20px;
+}
+/* section 6 */
+.section-6{
+}
+.carousel-title{
+    display: block;
+    margin: 30px 0;
+    text-align: center;
+    font-size: 32px;
+    font-stretch: extra-expanded;
+    font-weight: 600;
+}
+.carousel{
+    background-image: url("https://www.testim.io/wp-content/themes/testim/images/bg01.png");
+    
+}
+.carousel div{
+    padding: 25px;
+    width: 260px;
+    background-color: white;
+    /* border: 1.5px solid grey; */
+    box-shadow: 0 25px 50px rgba(0,0,0,.2);
+    margin: 0 auto 20px;
+}
+.carousel p{
+    font-size: 14px;
+    margin: 30px 0;
+    text-align: left;
 }
