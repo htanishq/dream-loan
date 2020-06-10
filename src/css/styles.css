@@ -1,0 +1,355 @@
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata');
+/* global css */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    font-family: 'Inconsolata';
+    font-size: 16px;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: initial;
+}
+ul{
+    list-style: none;
+}
+p{
+    font-size: 1.25rem;
+    padding: 0 0.75rem;
+}
+
+/* header part */
+.header{
+    background-color: #e4ebc1;
+    padding: 1.5625rem;
+    position: relative;
+}
+.nav-title img{
+    border-radius: 0.50rem;
+}
+.navbar{
+    top: 6.9rem;
+    right: -23rem;
+    display: flex;
+    height: 100vh;
+    position: fixed;
+    transition: all 650ms ease-in-out;
+    flex-direction: column;
+    background-color: #e4ebc1;
+    z-index: 1500;
+}
+.navbar.active{
+    right: 0;
+}
+.menu{    
+    float:right;
+    position: absolute;
+    top: 2.5rem;
+    right: 2rem;
+    cursor: pointer;
+}
+.navbar > ul{
+    /* margin: 1.5rem 0; */
+    padding: 0 6rem;
+
+}
+.navbar li{
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+.login-btn{
+    text-align: center;
+}
+.btn{
+ border: 0;
+ padding: 0.75rem;
+ border-radius: 0.2rem;
+ text-transform: uppercase;
+ cursor: pointer;
+}
+.login-btn > button:nth-child(1){
+    background: none;
+    border: 0.5px solid black;
+}
+.login-btn > button:nth-child(2){
+    background-color: aquamarine;
+}
+.inner-nav-show:hover .inner-nav{
+    display: block;
+    cursor: pointer;
+    background-color: aqua;
+}
+.inner-nav{
+    display: none;
+    position: absolute;
+    left: -2rem;
+}
+/* carousel part */
+.carousel .part-1{
+    background: url("../images/carousel-part-1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 4rem 0;
+    text-transform: uppercase;
+    color: white;
+}
+.carousel span{
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+}
+.carousel p{
+    margin-bottom: 1.25rem;
+}
+.carousel button{
+    background-color:#ddd840;
+    color: white;
+    font-size: 1rem;
+}
+.carousel img{
+    width: 100%;
+}
+.carousel .part-2{
+    overflow: hidden;
+    display: flex;
+}
+.carousel .item-2{
+    display: none;
+}
+.carousel .item-3{
+    display: none;
+}
+
+/* iso memo */
+
+.iso-memo{
+    background: rgba(175, 172, 170,0.2);
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.iso-memo img{
+    width: 160px;
+    height: 160px;
+    margin: 1.5rem 0;
+    border-radius: 5rem;
+}
+.iso-memo p{
+    text-transform: uppercase;
+}
+/* partners */
+.partner >div{
+    height: 430px;
+}
+.partner .part-1{
+    text-align: center;
+    padding: 1.5625rem 0;
+}
+.partner img{
+    width: 100%;
+}
+.partner .part-2 img{
+    height: 430px;
+}
+.partner span{
+    display: block;
+    margin-bottom: 1.25rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.partner p{
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    line-height: 1.4rem;
+}
+/* ratings */
+
+.ratings{
+    background:  rgba(175, 172, 170,0.2);
+    text-align: center;
+    padding: 2rem 0;
+}
+.ratings h3{
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+    text-transform: capitalize;
+}
+.ratings [class*='item-']{
+    padding: 2rem 0;
+}
+.ratings [class*='item-'] > p:first-child{
+    text-transform: capitalize;
+}
+.ratings p{
+    margin: 2rem 0;
+}
+.ratings .item-2,.ratings .item-3,.ratings .item-4,.ratings .item-5{
+    display: none;
+}
+.ratings h4{
+    font-size: 1.25rem;
+    text-transform: capitalize;
+}
+/* apply form */
+
+.apply-form{
+    /* background-color: lightgoldenrodyellow; */
+    text-align: center;
+    padding: 1.5625rem 0;
+    text-transform: capitalize;
+}
+.apply-form  h3{
+    margin-bottom: 1.75rem;
+}
+.apply-form p{
+    margin-bottom: 1.75rem;
+}
+.apply-form a{
+    text-decoration: underline aquamarine;
+}
+
+/* footer */
+.footer{
+    background-color: #2b406d;
+    color:white;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 1.5625rem 0;
+}
+.footer-logo > img:first-child{
+    margin-bottom: 2rem;
+}
+.footer span{
+    display: block;
+    margin: 1.75rem 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+.footer-logo ul li{
+    display: inline-block;
+}
+.footer li{
+    font-size: 1.15rem;
+}
+.footer a{
+    display: inline-block;
+    color: white;
+    margin: 0.2rem 0;
+}
+/* @media only screen and (min-width:1200px){
+    .wrapper{
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+} */
+@media only screen and (min-width:767px){
+    body{
+        background-color: ivory;
+    }
+    /* header part */
+    .nav-title{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .menu{
+        display: none;
+    }
+    .navbar{
+        position: initial;
+        height: auto;
+        display: inline-block;
+        transition: none;
+        margin-left: 15.25rem;
+    }
+    .navbar ul{
+        padding: 0;
+        float: left;
+        margin-right: 5rem;
+    }
+    .navbar li{
+        float: left;
+        margin-right: 3rem;
+    }
+    
+    .login-btn{
+        display: inline-block;
+    }
+    .login-btn .btn:first-child{
+        margin-right: 1.5rem;
+        padding: 0.60rem;
+    }
+    /* carousel part */
+    .carousel [class*="item-"]{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .carousel .part-1{
+        height: 50vh;
+    }
+    .carousel .part-1 span{
+        margin-top: 7rem;
+    }
+    .carousel .item-2{
+        display: none;
+    }
+    .carousel .item-3{
+        display: none;
+    }
+    /* iso memo part */
+    .iso-memo ul{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: center;
+    }
+    /* partner part */
+    .partner{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 100vh;
+    }
+    .partner .part-1 img{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .partner .part-2 img{
+        height: 100vh;
+    }
+    /* rating part */
+    .ratings [class*="item-"] > div{
+        margin: 0 auto;
+    }
+    .ratings [class*="item-"] > div > p{        
+        display: inline-block;
+        width: 40%;
+    }
+    .apply-form{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .footer-logo img{
+        margin-top: 1.65rem;
+    }
+    .footer > ul{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
