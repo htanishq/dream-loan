@@ -1,3 +1,4 @@
+// navigation menu
 var navbar = document.querySelector(".navbar");
 
 var menuClick = document.querySelector(".menuClick");
@@ -18,3 +19,6 @@ function showMenu(){
 }
 
 menuClick.addEventListener("click",showMenu);
+
+// carousel js
+
