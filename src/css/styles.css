@@ -41,14 +41,16 @@ p{
     border-radius: 0.50rem;
 }
 .navbar{
-    top: 6.8rem;
+    /* top: 6.8rem; */
+    top: 0;
     right: -23rem;
     display: flex;
     height: 100vh;
     position: fixed;
     transition: all 650ms ease-in-out;
     flex-direction: column;
-    background-color: #e4ebc1;
+    /* background-color: #e4ebc1; */
+    background-color: tomato;
     z-index: 1500;
 }
 .navbar.active{
@@ -61,9 +63,14 @@ p{
     right: 2rem;
     cursor: pointer;
 }
+.closemenu{
+    cursor: pointer;    
+    color: white;
+    margin: 1.75rem 0 0 1.75rem;
+}
 .navbar > ul{
     /* margin: 1.5rem 0; */
-    padding: 0 6rem;
+    padding: 20vh 6rem 5rem;
 
 }
 .navbar li{
@@ -85,6 +92,7 @@ p{
 .login-btn > button:nth-child(1){
     background: none;
     border: 0.5px solid black;
+    margin-right: 1.75rem;
 }
 .login-btn > button:nth-child(2){
     background-color: aquamarine;
@@ -100,6 +108,14 @@ p{
     left: -2rem;
 }
 /* carousel part */
+.carousel{
+    position: relative;
+    height: 564.633px;
+}
+.carousel [class*="item-"]{
+    position: absolute;
+    width: 100%;
+}
 .carousel .part-1{
     background: url("../images/carousel-part-1.jpeg");
     background-repeat: no-repeat;
@@ -129,13 +145,12 @@ p{
     overflow: hidden;
     display: flex;
 }
-.carousel .item-2{
+/* .carousel .item-2{
     display: none;
 }
 .carousel .item-3{
     display: none;
-}
-
+} */
 /* iso memo */
 
 .iso-memo{
@@ -154,6 +169,9 @@ p{
     text-transform: uppercase;
 }
 /* partners */
+.partner{
+    background-color: white;
+}
 .partner >div{
     height: 430px;
 }
@@ -210,7 +228,7 @@ p{
 /* apply form */
 
 .apply-form{
-    /* background-color: lightgoldenrodyellow; */
+    background-color: rgba(255,255,255,0.8);
     text-align: center;
     padding: 1.5625rem 0;
     text-transform: capitalize;
@@ -273,12 +291,16 @@ p{
     .menu{
         display: none;
     }
+    .closemenu{
+        display: none !important;
+    }
     .navbar{
         position: initial;
         height: auto;
         display: inline-block;
         transition: none;
         margin-left: 15.25rem;
+        background:none;
     }
     .navbar ul{
         padding: 0;
@@ -298,22 +320,25 @@ p{
         padding: 0.60rem;
     }
     /* carousel part */
+    .carousel{
+        height: 471.117px;;
+    }
     .carousel [class*="item-"]{
         display: grid;
         grid-template-columns: 50% 50%;
     }
     .carousel .part-1{
-        height: 50vh;
+        height: 100%;
     }
     .carousel .part-1 span{
         margin-top: 7rem;
     }
-    .carousel .item-2{
+    /* .carousel .item-2{
         display: none;
     }
     .carousel .item-3{
         display: none;
-    }
+    } */
     /* iso memo part */
     .iso-memo ul{
         display: grid;
@@ -324,14 +349,14 @@ p{
     .partner{
         display: grid;
         grid-template-columns: 50% 50%;
-        height: 100vh;
+        height: 562px;
     }
     .partner .part-1 img{
         display: inline-block;
         vertical-align: middle;
     }
     .partner .part-2 img{
-        height: 100vh;
+        height: 562px;
     }
     /* rating part */
     .ratings [class*="item-"] > div{
