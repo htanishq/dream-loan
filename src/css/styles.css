@@ -19,6 +19,13 @@ html{
     max-width: 1400px;
     margin: 0 auto;
 }
+/* inner wrapper for peronsal, home and home loan page */
+.inner-wrapper{
+    padding:0.75rem;
+    background-color: whitesmoke;
+    margin: 1.75rem 1.25rem;
+    box-shadow: 2px 1px 1.2rem 0.4rem rgba(0, 0, 0, 0.5);
+}
 a{
     text-decoration: none;
     color: initial;
@@ -100,7 +107,8 @@ p{
 .inner-nav-show:hover .inner-nav{
     display: block;
     cursor: pointer;
-    background-color: aqua;
+    background-color: white;
+    padding: 20px;
 }
 .inner-nav{
     display: none;
@@ -113,7 +121,7 @@ p{
     height: 564.633px;
 }
 .carousel [class*="item-"]{
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
 }
 .carousel .part-1{
@@ -218,9 +226,9 @@ p{
 .ratings p{
     margin: 2rem 0;
 }
-.ratings .item-2,.ratings .item-3,.ratings .item-4,.ratings .item-5{
+/* .ratings .item-2,.ratings .item-3,.ratings .item-4,.ratings .item-5{
     display: none;
-}
+} */
 .ratings h4{
     font-size: 1.25rem;
     text-transform: capitalize;
@@ -311,7 +319,11 @@ p{
         float: left;
         margin-right: 3rem;
     }
-    
+    .inner-nav{
+        z-index: 1;
+        position: absolute;
+        left: 20%;
+    }
     .login-btn{
         display: inline-block;
     }
@@ -378,3 +390,89 @@ p{
         grid-template-columns: 25% 25% 25% 25%;
     }
 }
+
+
+
+/* peronsal loan page css start from here */
+.item-box{
+    /* background-color: teal; */
+    margin-bottom: 1.5rem;
+}
+.item-box:last-child{
+    margin: 0;
+}
+
+.item-box > span{
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-align: left;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    display: inline-block;
+    font-weight: 600;
+}
+/* .item-box{
+} */
+.top-title{
+    margin: 0 1.2rem;
+    text-align: justify !important;
+    font-size: 1.25rem !important;
+}
+.feature-box{
+    margin-bottom: 30px;
+}
+.feature-box img{
+    width: 4.25rem;
+    float: left;
+    margin-right: 20px;
+}
+.feature-box span{
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.feature-box p{
+    margin-top: 30px;
+    font-size: 1.15rem;
+}
+.benefits-list{
+    text-transform: capitalize;
+    margin-left: 30px;
+}
+.benefits-list li{
+    list-style: outside;
+}
+.special-needs{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.special-needs li{
+    margin-bottom: 20px;
+    list-style: outside;
+}
+.special-needs b{
+    text-transform: capitalize;    
+}
+@media only screen and (min-width:767px){
+
+    .inner-wrapper{
+        width: 840px;
+        margin: 1.75rem auto;
+    }
+    .item-box{
+        margin-bottom: 60px;
+    }
+    .item-box p{
+        font-size: 1.05rem !important;
+    }
+    .feature-box{
+        width: 80%;
+    }
+    .top-title{
+        /* text-align: center !important;
+        display: block !important; */
+        margin:0 0 50px 50px  !important;
+    }
+}
+/* home loan page css start from here */
+/* home loan page css start from here */
