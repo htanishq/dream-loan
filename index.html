@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/styles.css" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>dream loan</title>
+    <link rel="stylesheet" href="./src/css/glider.min.css" type="text/css" rel="stylesheet">
+    <title>Dream Loan</title>
 </head>
 <body>
     <div class="wrapper">
@@ -21,11 +22,11 @@
                 <i class="material-icons closemenu">close</i>
                 <ul>
                     <li class="inner-nav-show">
-                        <a href="">products</a>
+                        <a href="" class="product-menu"></a>products</a>
                         <ul class="inner-nav">
-                            <li><a href="">personal loan</a></li>
-                            <li><a href="">business loan</a></li>
-                            <li><a href="">home loan</a></li>
+                            <li><a href="./src/pages/home-loan.html">home loan</a></li>
+                            <li><a href="./src/pages/personal-loan.html">peronsal loan</a></li>
+                            <li><a href="./src/pages/business-loan.html">business loan</a></li>
                         </ul>
                     </li>
                     <li><a href="">emi calculator</a></li>
@@ -42,7 +43,7 @@
         <div class="carousel">
             <div class="item-1">
                 <div class="part-1">
-                    <span>personal loan</span>
+                    <span>home loan</span>
                     <p>fullfill all your multiple need with choice</p>
                     <button class="btn">apply now</button>
                 </div>
@@ -50,7 +51,7 @@
             </div>
             <div class="item-2">
                 <div class="part-1">
-                    <span>business loan</span>
+                    <span>peronsal loan</span>
                     <p>fullfill all your multiple need with choice</p>
                     <button class="btn">apply now</button>
                 </div>
@@ -103,46 +104,49 @@
         <!-- section 4 -->
         <div class="ratings">
             <h3>rating & reviews</h3>
-            <div class="item-1">
-                <p>rated 4.5/5 on playstore & app store</p>
-                <img src="./src/images/rating.jpeg" alt="">
-                <div>
-                    <p>Good Application to check your Credit score for the current month and that too free of cost and also get some offer from
-                    banks in which you are eligible. Nice app overall.</p>
+            <div class="rating__slider">
+                <div class="item-1">
+                    <p>rated 4.5/5 on playstore & app store</p>
+                    <img src="./src/images/rating.jpeg" alt="">
+                    <div>
+                        <p>Good Application to check your Credit score for the current month and that too free of cost and also get some
+                            offer from
+                            banks in which you are eligible. Nice app overall.</p>
+                    </div>
+                    <h4>prateek gupta</h4>
                 </div>
-                <h4>prateek gupta</h4>
-            </div>
-            <div class="item-2">
-                <p>rated 4.5/5 on playstore & app store</p>
-                <img src="./src/images/rating.jpeg" alt="">
-                <div>
-                    <p>Great app for all your financial services.</p>
+                <div class="item-2">
+                    <p>rated 4.5/5 on playstore & app store</p>
+                    <img src="./src/images/rating.jpeg" alt="">
+                    <div>
+                        <p>Great app for all your financial services.</p>
+                    </div>
+                    <h4>baala krishna</h4>
                 </div>
-                <h4>baala krishna</h4>
-            </div>
-            <div class="item-3">
-                <p>rated 4.5/5 on playstore & app store</p>
-                <img src="./src/images/rating.jpeg" alt="">
-                <div>
-                    <p>Very good app to use. It shows all your accounts, payment history, credit score. Very easy to understand.</p>
+                <div class="item-3">
+                    <p>rated 4.5/5 on playstore & app store</p>
+                    <img src="./src/images/rating.jpeg" alt="">
+                    <div>
+                        <p>Very good app to use. It shows all your accounts, payment history, credit score. Very easy to understand.</p>
+                    </div>
+                    <h4>saiprasad ganarkar</h4>
                 </div>
-                <h4>saiprasad ganarkar</h4>
-            </div>
-            <div class="item-4">
-                <p>rated 4.5/5 on playstore & app store</p>
-                <img src="./src/images/rating.jpeg" alt="">
-                <div>
-                    <p>Excellent app!! A perfect to manage all your expenses, and also very efficient for fast loan approvals!</p>
+                <div class="item-4">
+                    <p>rated 4.5/5 on playstore & app store</p>
+                    <img src="./src/images/rating.jpeg" alt="">
+                    <div>
+                        <p>Excellent app!! A perfect to manage all your expenses, and also very efficient for fast loan approvals!</p>
+                    </div>
+                    <h4>pramit roy</h4>
                 </div>
-                <h4>pramit roy</h4>
-            </div>
-            <div class="item-5">
-                <p>rated 4.5/5 on playstore & app store</p>
-                <img src="./src/images/rating.jpeg" alt="">
-                <div>
-                    <p>Very good app for instant personal loan online, free credit score and credit cards.</p>
+                <div class="item-5">
+                    <p>rated 4.5/5 on playstore & app store</p>
+                    <img src="./src/images/rating.jpeg" alt="">
+                    <div>
+                        <p>Very good app for instant home loan online, free credit score and credit cards.</p>
+                    </div>
+                    <h4>abhinav bansal</h4>
                 </div>
-                <h4>abhinav bansal</h4>
             </div>
         </div>
         <!-- section 5 -->
@@ -173,8 +177,8 @@
                     <span>products</span>
                     <ul>
                         <li><a href="">home loan</a></li>
-                        <li><a href="">personal loan</a></li>
-                        <li><a href="">business loan</a></li>
+                        <li><a href="">home loan</a></li>
+                        <li><a href="">peronsal loan</a></li>
                     </ul>
                 </li>
                 <li class="resource">
@@ -195,6 +199,8 @@
             </ul>
         </div>
     </div>
+    <script src="./src/js/glider.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="./src/js/app.js"></script>
+    
 </body>
 </html>
