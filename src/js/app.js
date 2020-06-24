@@ -24,6 +24,7 @@ function closeMenu(){
     navbar.classList.remove("active");
     togglemenu = false
 }
+console.log(togglemenu);
 menuOpen.addEventListener("click",openMenu);
 menuClose.addEventListener("click",closeMenu);
 
@@ -52,3 +53,27 @@ var slide = {
 new Glider(document.querySelector('.carousel'),slide);
 
 new Glider(document.querySelector('.rating__slider'),slide);
+
+/************************************************************************/ 
+
+var signupModal= document.getElementsByClassName("signup")[0]; // open  sign up modal
+var signinModal = document.getElementsByClassName("signin")[0]; // open sign in modal
+
+function showlogin(signVal){
+    signVal.classList.add("modal-active");
+}
+
+function hidelogin(){
+    document.getElementsByClassName("modal-bg")[0].classList.remove("modal-active");
+    document.getElementsByClassName("modal-bg")[1].classList.remove("modal-active");
+}
+
+document.getElementById("getlogin").addEventListener("click",function(){
+    showlogin(signupModal);
+});
+
+document.getElementById("getregister").addEventListener("click",function(){
+    showlogin(signinModal);
+})
+document.getElementsByClassName("closeLogin")[0].addEventListener("click",hidelogin);
+document.getElementsByClassName("closeLogin")[1].addEventListener("click", hidelogin);

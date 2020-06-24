@@ -1,6 +1,7 @@
-/* import fonts */
+/********************************************* import fonts *********************************************/
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata');
-/* global css */
+
+/********************************************* global css *********************************************/
 *,
 *::before,
 *::after{
@@ -38,7 +39,7 @@ p{
     padding: 0 0.75rem;
 }
 
-/* header part */
+/********************************************* header part *********************************************/
 .header{
     background-color: #e4ebc1;
     padding: 1.5625rem;
@@ -115,7 +116,7 @@ p{
     position: absolute;
     left: -2rem;
 }
-/* carousel part */
+/********************************************* carousel part *********************************************/
 .carousel{
     position: relative;
     height: 564.633px;
@@ -159,7 +160,7 @@ p{
 .carousel .item-3{
     display: none;
 } */
-/* iso memo */
+/********************************************* iso memo *********************************************/
 
 .iso-memo{
     background: rgba(175, 172, 170,0.2);
@@ -176,7 +177,7 @@ p{
 .iso-memo p{
     text-transform: uppercase;
 }
-/* partners */
+/********************************************* partners *********************************************/
 .partner{
     background-color: white;
 }
@@ -205,7 +206,7 @@ p{
     text-transform: capitalize;
     line-height: 1.4rem;
 }
-/* ratings */
+/********************************************* ratings *********************************************/
 
 .ratings{
     background:  rgba(175, 172, 170,0.2);
@@ -233,7 +234,7 @@ p{
     font-size: 1.25rem;
     text-transform: capitalize;
 }
-/* apply form */
+/********************************************* apply form *********************************************/
 
 .apply-form{
     background-color: rgba(255,255,255,0.8);
@@ -251,7 +252,7 @@ p{
     text-decoration: underline aquamarine;
 }
 
-/* footer */
+/********************************************* footer *********************************************/
 .footer{
     background-color: #2b406d;
     color:white;
@@ -280,120 +281,44 @@ p{
     color: white;
     margin: 0.2rem 0;
 }
-/* @media only screen and (min-width:1200px){
-    .wrapper{
-        width: 100%;
-        max-width: 1400px;
-        margin: 0 auto;
-    }
-} */
-@media only screen and (min-width:767px){
-    body{
-        background-color: ivory;
-    }
-    /* header part */
-    .nav-title{
-        display: inline-block;
-        vertical-align: middle;
-    }
-    .menu{
-        display: none;
-    }
-    .closemenu{
-        display: none !important;
-    }
-    .navbar{
-        position: initial;
-        height: auto;
-        display: inline-block;
-        transition: none;
-        margin-left: 15.25rem;
-        background:none;
-    }
-    .navbar ul{
-        padding: 0;
-        float: left;
-        margin-right: 5rem;
-    }
-    .navbar li{
-        float: left;
-        margin-right: 3rem;
-    }
-    .inner-nav{
-        z-index: 1;
-        position: absolute;
-        left: 20%;
-    }
-    .login-btn{
-        display: inline-block;
-    }
-    .login-btn .btn:first-child{
-        margin-right: 1.5rem;
-        padding: 0.60rem;
-    }
-    /* carousel part */
-    .carousel{
-        height: 471.117px;;
-    }
-    .carousel [class*="item-"]{
-        display: grid;
-        grid-template-columns: 50% 50%;
-    }
-    .carousel .part-1{
-        height: 100%;
-    }
-    .carousel .part-1 span{
-        margin-top: 7rem;
-    }
-    /* .carousel .item-2{
-        display: none;
-    }
-    .carousel .item-3{
-        display: none;
-    } */
-    /* iso memo part */
-    .iso-memo ul{
-        display: grid;
-        grid-template-columns: 30% 30% 30%;
-        justify-content: center;
-    }
-    /* partner part */
-    .partner{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        height: 562px;
-    }
-    .partner .part-1 img{
-        display: inline-block;
-        vertical-align: middle;
-    }
-    .partner .part-2 img{
-        height: 562px;
-    }
-    /* rating part */
-    .ratings [class*="item-"] > div{
-        margin: 0 auto;
-    }
-    .ratings [class*="item-"] > div > p{        
-        display: inline-block;
-        width: 40%;
-    }
-    .apply-form{
-        display: grid;
-        grid-template-columns: 50% 50%;
-    }
-    .footer-logo img{
-        margin-top: 1.65rem;
-    }
-    .footer > ul{
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-    }
+/********************************************* modal css *********************************************/
+
+.modal-bg{
+    height: 100vh;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s opacity 0,5s;
 }
+.modal{
+    position: relative;
+    background-color: white;
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.modal-active{
+    visibility: visible;
+    opacity: 1;
+}
+.closeLogin{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
 
-
-
-/* peronsal loan page css start from here */
+}
+/********************************************* peronsal loan page css start from here **********************************/
 .item-box{
     /* background-color: teal; */
     margin-bottom: 1.5rem;
@@ -453,10 +378,141 @@ p{
 .special-needs b{
     text-transform: capitalize;    
 }
-@media only screen and (min-width:767px){
 
+.customer-info{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.customer-info label{
+    text-transform: capitalize;
+}
+.customer-info input{
+    width: 70%;
+    margin: 0 auto;
+}
+.customer-info .btn{
+    background-color: lightblue;
+    width: 20%;
+    margin: 0 auto;
+}
+
+
+/* @media only screen and (min-width:1200px){
+    .wrapper{
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+} */
+@media only screen and (min-width:767px){
+    body{
+        background-color: ivory;
+    }
+    /************************************ header part ********************************************/
+    .nav-title{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .menu{
+        display: none;
+    }
+    .closemenu{
+        display: none !important;
+    }
+    .navbar{
+        position: initial;
+        height: auto;
+        display: inline-block;
+        transition: none;
+        margin-left: 15.25rem;
+        background:none;
+    }
+    .navbar ul{
+        padding: 0;
+        float: left;
+        margin-right: 5rem;
+    }
+    .navbar li{
+        float: left;
+        margin-right: 3rem;
+    }
+    .inner-nav{
+        z-index: 1;
+        position: absolute;
+        left: 20%;
+    }
+    .login-btn{
+        display: inline-block;
+    }
+    .login-btn .btn:first-child{
+        margin-right: 1.5rem;
+        padding: 0.60rem;
+    }
+    /********************************************* carousel part *********************************************/
+    .carousel{
+        height: 471.117px;;
+    }
+    .carousel [class*="item-"]{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .carousel .part-1{
+        height: 100%;
+    }
+    .carousel .part-1 span{
+        margin-top: 7rem;
+    }
+    /* .carousel .item-2{
+        display: none;
+    }
+    .carousel .item-3{
+        display: none;
+    } */
+    /********************************************* iso memo part *********************************************/
+    .iso-memo ul{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: center;
+    }
+    /********************************************* partner part *********************************************/
+    .partner{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 562px;
+    }
+    .partner .part-1 img{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .partner .part-2 img{
+        height: 562px;
+    }
+    /********************************************* rating part *********************************************/
+    .ratings [class*="item-"] > div{
+        margin: 0 auto;
+    }
+    .ratings [class*="item-"] > div > p{        
+        display: inline-block;
+        width: 40%;
+    }
+    .apply-form{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .footer-logo img{
+        margin-top: 1.65rem;
+    }
+    .footer > ul{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    /********************************************* personal loan page desktop css *********************************************/
     .inner-wrapper{
-        width: 840px;
+        
         margin: 1.75rem auto;
     }
     .item-box{
@@ -473,6 +529,24 @@ p{
         display: block !important; */
         margin:0 0 50px 50px  !important;
     }
+    .modal{
+        width: 30%;
+    }
+    .customer-info{
+        width: 35%;
+        margin: 0 auto;
+    }
 }
+
+
+
+
+/* @media only screen and (min-width:767px){
+
+    
+} */
 /* home loan page css start from here */
 /* home loan page css start from here */
+
+/********************************************* modal css *********************************************/
+
