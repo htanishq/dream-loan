@@ -216,18 +216,22 @@
     <div class="modal-bg signin">
         <div class="modal">
             <i class="material-icons closeLogin">close</i>
-            <span>register</span>
-            <label for="name">full name : </label>
-            <input type="text" name="fullname">
-            <label for="name">user name : </label>
-            <input type="text" name="username">
+            <span>Register</span></br>
+            <form action="connect.php" method="POST">
+            <label for="name">FirstName : </label>
+            <input type="text" name="firstName">
+            <label for="name">LastName : </label>
+            <input type="text" name="lastName">
+            <label for="name">User Name : </label>
+            <input type="text" name="userName">
             <label for="password">password : </label>
             <input type="password" name="password">
-            <label for="number">phone no : </label>
-            <input type="number" name="number">
+            <label for="number">Mobile no : </label>
+            <input type="number" name="mobilenumber">
             <label for="email">email : </label>
-            <input type="email" name="email">
-            <button class="btn">register</button>
+            <input type="email" name="emailid">
+            <input type="submit">register
+            </form>
         </div>
     </div>
     <script src="./src/js/glider.min.js" type="text/javascript"></script>
